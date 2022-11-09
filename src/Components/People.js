@@ -2,20 +2,20 @@ import React from 'react';
 import BasicModal from './PeopleModal.js';
 import getData from '../util/getData.js';
 
-export default class People extends React.Component{
-    constructor(props){
+export default class People extends React.Component {
+    constructor(props) {
         super(props);
-        this.state={
+        this.state = {
             people: {},
-            loaded:false
+            loaded: false
         }
     }
 
-    render(){
+    render() {
         const { people, loaded } = this.state;
 
         //initial state
-        if(!loaded) return (<div>People Loading...</div>);
+        if (!loaded) return (<div>People Loading...</div>);
 
         return (
             <div>
@@ -24,39 +24,39 @@ export default class People extends React.Component{
                 <h2>Faculty</h2>
                 {/* Put out ALL of the faculty... */}
                 <div className='peopleList'>
-                {
-                    people.faculty.map((p) => 
-                        <div className='peopleListItem'>
-                            <img src={p.imagePath} style={{maxWidth:"150px"}} alt="Faculty Person"/>
-                            <div>{p.name}</div>
-                            <BasicModal {...p}> </BasicModal>
-                        </div>
-                    )
-                }
+                    {
+                        people.faculty.map((p) =>
+                            <div className='peopleListItem'>
+                                <img src={p.imagePath} style={{ maxWidth: "150px" }} alt="Faculty Person" />
+                                <div>{p.name}</div>
+                                <BasicModal {...p}> </BasicModal>
+                            </div>
+                        )
+                    }
                 </div>
                 <h2>Staff</h2>
                 {/* Put out ALL of the faculty... */}
                 <div className='peopleList'>
-                {
-                    people.staff.map((p) => 
-                        <div className='peopleListItem'>
-                            <img src={p.imagePath} style={{maxWidth:"150px"}} alt="Staff Person"/>
-                            <div>{p.name}</div>
-                            <BasicModal {...p}> </BasicModal>
-                        </div>
-                    )
-                }
+                    {
+                        people.staff.map((p) =>
+                            <div className='peopleListItem'>
+                                <img src={p.imagePath} style={{ maxWidth: "150px" }} alt="Staff Person" />
+                                <div>{p.name}</div>
+                                <BasicModal {...p}> </BasicModal>
+                            </div>
+                        )
+                    }
                 </div>
             </div>
         )
     }
 
-    componentDidMount(){
+    componentDidMount() {
         getData('people/')
             .then((json) => {
                 this.setState({
-                    people:json,
-                    loaded:true,
+                    people: json,
+                    loaded: true,
                 });
             });
     }

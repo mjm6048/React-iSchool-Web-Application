@@ -16,8 +16,8 @@ const style = {
     p: 4,
 };
 
-export default function BasicModal({name, tagline, title, interestArea, office,
-    website, phone, email, twitter, facebook, imagePath, username}) {
+export default function BasicModal({ name, tagline, title, interestArea, office,
+    website, phone, email, twitter, facebook, imagePath, username }) {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -41,14 +41,14 @@ export default function BasicModal({name, tagline, title, interestArea, office,
                     <Typography id="modal-modal-title" variant="h5" component="h2">
                         {tagline}
                     </Typography>
-                    <img src={imagePath} alt="me"/>
+                    <img src={imagePath} alt="me" />
                     {/* cool if true then show website link */}
-                    { website &&
+                    {website &&
                         <Typography sx={{ mt: 2 }}>
                             <a href={website} target="_blank">My Site</a>
                         </Typography>
                     }
-                    { office &&
+                    {office &&
                         <Typography sx={{ mt: 2 }}>
                             Office: {office}
                         </Typography>

@@ -4,8 +4,8 @@ import PeopleTabs from './Components/PeopleTabs.js';
 import './App.css';
 import getData from './util/getData.js';
 
-export default class App extends React.Component{
-  constructor(props){
+export default class App extends React.Component {
+  constructor(props) {
     //below line creates access to what I normally assume is this
     super(props);
     //any data that can or will change (so we get another render!)
@@ -15,11 +15,11 @@ export default class App extends React.Component{
     }
   }
 
-  render(){
+  render() {
     //bring in state...
-    const {about, loaded} = this.state;
+    const { about, loaded } = this.state;
 
-    if(!loaded) return (<div><h1>Loading...</h1></div>);
+    if (!loaded) return (<div><h1>Loading...</h1></div>);
 
     return (
       <div className="App">
@@ -28,10 +28,10 @@ export default class App extends React.Component{
         <h4>{about.description}</h4>
         <h3>{about.quote}</h3>
         <h3>--{about.quoteAuthor}</h3>
-         {/* now we can start loading our Components! */}
-        <hr/>
-        <PeopleTabs/>
-        <hr/>
+        {/* now we can start loading our Components! */}
+        <hr />
+        <PeopleTabs />
+        <hr />
 
         {/* I can write a comment! */}
       </div>
@@ -39,14 +39,14 @@ export default class App extends React.Component{
 
   }
 
-  componentDidMount(){
+  componentDidMount() {
     //go get the data!
     getData('about/')
-      .then((json)=>{
+      .then((json) => {
         console.log(json);
         this.setState({
           about: json,
-          loaded:true
+          loaded: true
         })
       });
   }
