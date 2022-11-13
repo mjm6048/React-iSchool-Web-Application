@@ -1,5 +1,5 @@
 import React from 'react';
-import BasicModal from './PeopleModal.js';
+import PeopleModal from './PeopleModal.js';
 import getData from '../util/getData.js';
 
 export default class People extends React.Component {
@@ -29,7 +29,7 @@ export default class People extends React.Component {
                             <div className='peopleListItem'>
                                 <img src={p.imagePath} style={{ maxWidth: "150px" }} alt="Faculty Person" />
                                 <div>{p.name}</div>
-                                <BasicModal {...p}> </BasicModal>
+                                <PeopleModal {...p}> </PeopleModal>
                             </div>
                         )
                     }
@@ -42,7 +42,7 @@ export default class People extends React.Component {
                             <div className='peopleListItem'>
                                 <img src={p.imagePath} style={{ maxWidth: "150px" }} alt="Staff Person" />
                                 <div>{p.name}</div>
-                                <BasicModal {...p}> </BasicModal>
+                                <PeopleModal {...p}> </PeopleModal>
                             </div>
                         )
                     }

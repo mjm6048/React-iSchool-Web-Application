@@ -3,6 +3,8 @@ import People from './Components/People.js';
 import PeopleTabs from './Components/PeopleTabs.js';
 import './App.css';
 import getData from './util/getData.js';
+import Degrees from './Components/Degrees.js';
+import DegreesTabs from './Components/DegreesTabs.js';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -30,10 +32,11 @@ export default class App extends React.Component {
         <h3>--{about.quoteAuthor}</h3>
         {/* now we can start loading our Components! */}
         <hr />
+        <DegreesTabs></DegreesTabs>
+        <hr />
+        {/* I can write a comment! */}
         <PeopleTabs />
         <hr />
-
-        {/* I can write a comment! */}
       </div>
     );
 

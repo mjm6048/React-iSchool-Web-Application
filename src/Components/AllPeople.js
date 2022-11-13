@@ -29,6 +29,5 @@ export default class People extends React.Component {
                 </div>
             </div>
         )
-
     }
 }

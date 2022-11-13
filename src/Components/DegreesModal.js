@@ -16,15 +16,14 @@ const style = {
     p: 4,
 };
 
-export default function PeopleModal({ name, tagline, title, interestArea, office,
-    website, phone, email, twitter, facebook, imagePath, username }) {
+export default function DegreesModal({ degreeName, title, description, concentrations}) {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
     return (
         <div>
-            <Button onClick={handleOpen}>{name}</Button>
+            <Button onClick={handleOpen}>{degreeName}</Button>
             <Modal
                 open={open}
                 onClose={handleClose}
@@ -33,28 +32,16 @@ export default function PeopleModal({ name, tagline, title, interestArea, office
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h3" component="h2">
-                        {name}
+                        {degreeName}
                     </Typography>
                     <Typography id="modal-modal-title" variant="h5" component="h2">
                         {title}
                     </Typography>
                     <Typography id="modal-modal-title" variant="h5" component="h2">
-                        {tagline}
+                        {concentrations}
                     </Typography>
-                    <img src={imagePath} alt="me" />
-                    {/* cool if true then show website link */}
-                    {website &&
-                        <Typography sx={{ mt: 2 }}>
-                            <a href={website} target="_blank">My Site</a>
-                        </Typography>
-                    }
-                    {office &&
-                        <Typography sx={{ mt: 2 }}>
-                            Office: {office}
-                        </Typography>
-                    }
                     <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                        {description}
                     </Typography>
                 </Box>
             </Modal>
