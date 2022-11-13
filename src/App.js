@@ -5,6 +5,7 @@ import './App.css';
 import getData from './util/getData.js';
 import Degrees from './Components/Degrees.js';
 import DegreesTabs from './Components/DegreesTabs.js';
+import MinorsCards from './Components/MinorsCards.js';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -34,6 +35,10 @@ export default class App extends React.Component {
         <hr />
         <DegreesTabs></DegreesTabs>
         <hr />
+
+        <MinorsCards></MinorsCards>
+        <hr/>
+        
         {/* I can write a comment! */}
         <PeopleTabs />
         <hr />

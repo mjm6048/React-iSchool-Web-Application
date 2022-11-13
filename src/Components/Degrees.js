@@ -19,9 +19,10 @@ export default class Degrees extends React.Component {
 
         return (
             <div>
+                {/* Need to edit 23 and 24 */}
                 <h1>{degrees.title}</h1>
                 <h3>{degrees.degreeName}</h3>
-                <h2>Degrees</h2>
+                <h2>Our Undergraduate Degrees</h2>
                 {/* Put out ALL of the degrees... */}
                 <div className='peopleList'>
                     {
