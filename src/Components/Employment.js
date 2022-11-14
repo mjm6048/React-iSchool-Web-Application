@@ -1,6 +1,6 @@
 import React from 'react';
 import getData from '../util/getData.js';
-import EmploymentModal from './EmploymentModal.js';
+import BasicCard from './EmploymentCard.js';
 
 export default class Employment extends React.Component {
     constructor(props) {
@@ -19,15 +19,16 @@ export default class Employment extends React.Component {
 
         return (
             <div>
-                <h1>Employment</h1>
-                {/* All of introduction */}
-                <h2>{employment.introduction.title}</h2>
+                {/* All of employment introduction */}
+                <h1>{employment.introduction.title}</h1>
                 <h2>{employment.introduction.content[0].title}</h2>
                 <h2>{employment.introduction.content[0].description}</h2>
-                <h2>{employment.introduction.content[1].title}</h2>
-                <h2>{employment.introduction.content[1].description}</h2>
 
                 {/* All of statistics */}
+                <BasicCard>
+                    title={employment.degreeStatistics.title}
+                </BasicCard>
+                {/* <BasicCard({employment.degreeStatistics.title}, {employment.degreeStatistics.statistics[0].value}, {employment.degreeStatistics.statistics[0].description})> */}
                 <h2>{employment.degreeStatistics.title}</h2>
                 <h2>{employment.degreeStatistics.statistics[0].value}</h2>
                 <h2>{employment.degreeStatistics.statistics[0].description}</h2>
@@ -41,21 +42,14 @@ export default class Employment extends React.Component {
                 <h2>{employment.degreeStatistics.statistics[3].value}</h2>
                 <h2>{employment.degreeStatistics.statistics[3].description}</h2>
 
-                {/* <h2>{employment.</h2> */}
+                {/* All of cooperative education introduction */}
+                <h2>{employment.introduction.content[1].title}</h2>
+                <h2>{employment.introduction.content[1].description}</h2>
 
-                {/* Put out ALL of the employment... */}
-                <div className='peopleList'>
-                    {
-                        // employment.map((p) =>
-                        // <div className='peopleListItem'>
-                        //         {/* replace the below with a cute little icon for reach minor */}
-                        //         <img src={p.imagePath} style={{ maxWidth: "150px" }} alt="Cute Little Icon" />
-                        //         <EmploymentModal {...p}> </EmploymentModal>
-                        //     </div>
-                        // )
-                        // EmploymentModal(employment.introduction.title)
-                    }
-                </div>
+                {/* All of employing company names */}
+
+                {/* All of careers/jobs */}
+
             </div>
         )
     }
