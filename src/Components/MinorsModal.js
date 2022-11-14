@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import ControlPointIcon from '@mui/icons-material/ControlPoint';
 
 const style = {
     position: 'absolute',
@@ -32,23 +33,42 @@ export default function MinorsModal({ name, title, description, courses, note}) 
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h3" component="h2">
-                        {name}
-                    </Typography>
-                    <Typography id="modal-modal-title" variant="h5" component="h2">
-                        {title}
+                        Minor: {title}
                     </Typography>
                     <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                         {description}
                     </Typography>
-                    <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                        {courses}
+                    <Typography id="modal-modal-title" variant="h5" component="ul">
+                        {courses[0]}
+                    </Typography>
+                    <Typography id="modal-modal-title" variant="h5" component="ul">
+                        {courses[1]}
+                    </Typography>
+                    <Typography id="modal-modal-title" variant="h5" component="ul">
+                        {courses[2]}
+                    </Typography>
+                    <Typography id="modal-modal-title" variant="h5" component="ul">
+                        {courses[3]}
+                    </Typography>
+                    <Typography id="modal-modal-title" variant="h5" component="ul">
+                        {courses[4]}
+                    </Typography>
+                    <Typography id="modal-modal-title" variant="h5" component="ul">
+                        {courses[5]}
+                    </Typography>
+                    <Typography id="modal-modal-title" variant="h5" component="ul">
+                        {courses[6]}
+                    </Typography>
+                    <Typography id="modal-modal-title" variant="h5" component="ul">
+                        {courses[7]}
                     </Typography>
                     <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                         {note}
                     </Typography>
                 </Box>
             </Modal>
-            <Button onClick={handleOpen}>Click me for more info</Button>
+            <Button onClick={handleOpen}><ControlPointIcon> fontSize="large"</ControlPointIcon></Button>
+            <p>Click to find out more.</p>
         </div>
     );
 }

@@ -62,7 +62,6 @@ export default function DegreesUndergraduateModal({ title, description, concentr
             </Modal>
             
             <Button onClick={handleOpen}><ControlPointIcon> fontSize="large"</ControlPointIcon></Button>
-            {/* <img src={p.imagePath} style={{ maxWidth: "150px" }} alt="Cute Little Icon" /> */}
             <p>Click to find out more.</p>
         </div>
     );
