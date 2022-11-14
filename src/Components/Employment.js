@@ -1,6 +1,6 @@
 import React from 'react';
 import getData from '../util/getData.js';
-import StatisticCard from './EmploymentStatisticCard.js';
+import EmploymentStatisticCard from './EmploymentStatisticCard.js';
 
 export default class Employment extends React.Component {
     constructor(props) {
@@ -26,13 +26,13 @@ export default class Employment extends React.Component {
 
                 {/* All of statistics */}
                 <h2>{employment.degreeStatistics.title}</h2>
-                {StatisticCard(employment.degreeStatistics.statistics[0].value, employment.degreeStatistics.statistics[0].description)}
+                {EmploymentStatisticCard(employment.degreeStatistics.statistics[0].value, employment.degreeStatistics.statistics[0].description)}
 
-                {StatisticCard(employment.degreeStatistics.statistics[1].value, employment.degreeStatistics.statistics[1].description)}
+                {EmploymentStatisticCard(employment.degreeStatistics.statistics[1].value, employment.degreeStatistics.statistics[1].description)}
 
-                {StatisticCard(employment.degreeStatistics.statistics[2].value, employment.degreeStatistics.statistics[2].description)}
+                {EmploymentStatisticCard(employment.degreeStatistics.statistics[2].value, employment.degreeStatistics.statistics[2].description)}
 
-                {StatisticCard(employment.degreeStatistics.statistics[3].value, employment.degreeStatistics.statistics[3].description)}
+                {EmploymentStatisticCard(employment.degreeStatistics.statistics[3].value, employment.degreeStatistics.statistics[3].description)}
 
                 {/* All of cooperative education introduction */}
                 <h2>{employment.introduction.content[1].title}</h2>
