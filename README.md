@@ -73,4 +73,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 MaterialUI (MUI) : https://mui.com/material-ui/getting-started/installation/
 
+MaterialUI Icons : https://mui.com/material-ui/material-icons/
+
 Semantic-UI : https://react.semantic-ui.com/usage
+
+Used Tabs, Basic Modal, Cards, Default functionality
