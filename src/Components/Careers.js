@@ -1,43 +1,44 @@
 import React from 'react';
 import getData from '../util/getData.js';
 
-export default class Employers extends React.Component {
+export default class Careers extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            employers: {},
+            careers: {},
             loaded: false
         }
     }
 
     render() {
-        const { employers, loaded } = this.state;
+        const { careers, loaded } = this.state;
 
         //initial state
-        if (!loaded) return (<div>Employers Loading...</div>);
+        if (!loaded) return (<div>Careers Loading...</div>);
 
         return (
             <div>
-                <h1>Employers</h1>
+                <h1>Careers</h1>
                 {/* Put out ALL of the Employer Names... */}
                 <div className='peopleList'>
                     {
-                        employers.employerNames.map((p) =>
+                        careers.careerNames.map((p) =>
                             <div className='peopleListItem'>
                                 <div>{p}</div>
                             </div>
                         )
                     }
                 </div>
+                <p>*Employers/Careers are randomly pulled from our recent graduates</p>
             </div>
         )
     }
 
     componentDidMount() {
-        getData('employment/employers/employerNames/')
+        getData('employment/careers/careerNames/')
             .then((json) => {
                 this.setState({
-                    employers: json,
+                    careers: json,
                     loaded: true,
                 });
             });
