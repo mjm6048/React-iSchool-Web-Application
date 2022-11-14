@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import ControlPointIcon from '@mui/icons-material/ControlPoint';
 
 const style = {
     position: 'absolute',
@@ -25,7 +26,6 @@ export default function DegreesGraduateModal({ degreeName, title, description, c
         <div>
             <h3>{title}</h3>
             <p>{description}</p>
-            <Button onClick={handleOpen}>{degreeName}</Button>
             <Modal
                 open={open}
                 onClose={handleClose}
@@ -34,19 +34,36 @@ export default function DegreesGraduateModal({ degreeName, title, description, c
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h3" component="h2">
-                        {degreeName}
-                    </Typography>
-                    <Typography id="modal-modal-title" variant="h5" component="h2">
                         {title}
                     </Typography>
-                    <Typography id="modal-modal-title" variant="h5" component="h2">
-                        {concentrations}
+                    <Typography id="modal-modal-title" variant="h5" component="h3">
+                        Concentrations
                     </Typography>
-                    <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                        {description}
+                    <hr/>
+                    <Typography id="modal-modal-title" variant="h5" component="ul">
+                        {concentrations[0]}
+                    </Typography>
+                    <Typography id="modal-modal-title" variant="h5" component="ul">
+                        {concentrations[1]}
+                    </Typography>
+                    <Typography id="modal-modal-title" variant="h5" component="ul">
+                        {concentrations[2]}
+                    </Typography>
+                    <Typography id="modal-modal-title" variant="h5" component="ul">
+                        {concentrations[3]}
+                    </Typography>
+                    <Typography id="modal-modal-title" variant="h5" component="ul">
+                        {concentrations[4]}
+                    </Typography>
+                    <Typography id="modal-modal-title" variant="h5" component="ul">
+                        {concentrations[5]}
                     </Typography>
                 </Box>
             </Modal>
+            
+            <Button onClick={handleOpen}><ControlPointIcon> fontSize="large"</ControlPointIcon></Button>
+            {/* <img src={p.imagePath} style={{ maxWidth: "150px" }} alt="Cute Little Icon" /> */}
+            <p>Click to find out more.</p>
         </div>
     );
 }
