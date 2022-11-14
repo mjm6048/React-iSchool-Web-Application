@@ -7,6 +7,7 @@ import Minors from './Components/Minors.js';
 import DegreesUndergraduate from './Components/DegreesUndergraduate.js';
 import DegreesGraduate from './Components/DegreesGraduate.js';
 import Employment from './Components/Employment.js';
+import Employers from './Components/Employers.js';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -44,6 +45,9 @@ export default class App extends React.Component {
         <hr/>
 
         <Employment></Employment>
+        <hr/>
+
+        <Employers></Employers>
         <hr/>
 
         {/* I can write a comment! */}
