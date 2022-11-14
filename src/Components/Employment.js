@@ -1,6 +1,6 @@
 import React from 'react';
 import getData from '../util/getData.js';
-import BasicCard from './EmploymentCard.js';
+import StatisticCard from './EmploymentCard.js';
 
 export default class Employment extends React.Component {
     constructor(props) {
@@ -25,22 +25,14 @@ export default class Employment extends React.Component {
                 <h2>{employment.introduction.content[0].description}</h2>
 
                 {/* All of statistics */}
-                <BasicCard>
-                    title={employment.degreeStatistics.title}
-                </BasicCard>
-                {/* <BasicCard({employment.degreeStatistics.title}, {employment.degreeStatistics.statistics[0].value}, {employment.degreeStatistics.statistics[0].description})> */}
                 <h2>{employment.degreeStatistics.title}</h2>
-                <h2>{employment.degreeStatistics.statistics[0].value}</h2>
-                <h2>{employment.degreeStatistics.statistics[0].description}</h2>
+                {StatisticCard(employment.degreeStatistics.statistics[0].value, employment.degreeStatistics.statistics[0].description)}
 
-                <h2>{employment.degreeStatistics.statistics[1].value}</h2>
-                <h2>{employment.degreeStatistics.statistics[1].description}</h2>
+                {StatisticCard(employment.degreeStatistics.statistics[1].value, employment.degreeStatistics.statistics[1].description)}
 
-                <h2>{employment.degreeStatistics.statistics[2].value}</h2>
-                <h2>{employment.degreeStatistics.statistics[2].description}</h2>
+                {StatisticCard(employment.degreeStatistics.statistics[2].value, employment.degreeStatistics.statistics[2].description)}
 
-                <h2>{employment.degreeStatistics.statistics[3].value}</h2>
-                <h2>{employment.degreeStatistics.statistics[3].description}</h2>
+                {StatisticCard(employment.degreeStatistics.statistics[3].value, employment.degreeStatistics.statistics[3].description)}
 
                 {/* All of cooperative education introduction */}
                 <h2>{employment.introduction.content[1].title}</h2>

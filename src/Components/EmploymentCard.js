@@ -6,19 +6,19 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function BasicCard({title, contentTitle, description}) {
+export default function StatisticCard(value, description) {
     return (
         <Card sx={{ minWidth: 275 }}>
             <CardContent>
                 <Typography variant="h5" component="div">
-                    title
+                    {value}
                 </Typography>
                 <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                    {contentTitle}
-                </Typography>
-                <Typography variant="body2">
                     {description}
                 </Typography>
+                {/* <Typography variant="body2">
+                    {props.description}
+                </Typography> */}
             </CardContent>
         </Card>
     );
