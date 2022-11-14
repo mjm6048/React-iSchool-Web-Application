@@ -3,9 +3,10 @@ import People from './Components/People.js';
 import PeopleTabs from './Components/PeopleTabs.js';
 import './App.css';
 import getData from './util/getData.js';
-import Degrees from './Components/Degrees.js';
-import DegreesTabs from './Components/DegreesTabs.js';
-import MinorsCards from './Components/MinorsCards.js';
+import Minors from './Components/Minors.js';
+import DegreesUndergraduate from './Components/DegreesUndergraduate.js';
+import DegreesGraduate from './Components/DegreesGraduate.js';
+import Employment from './Components/Employment.js';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -32,16 +33,22 @@ export default class App extends React.Component {
         <h3>{about.quote}</h3>
         <h3>--{about.quoteAuthor}</h3>
         {/* now we can start loading our Components! */}
-        <hr />
-        <DegreesTabs></DegreesTabs>
-        <hr />
-
-        <MinorsCards></MinorsCards>
         <hr/>
-        
+        <DegreesUndergraduate></DegreesUndergraduate>
+        <hr/>
+
+        <DegreesGraduate></DegreesGraduate>
+        <hr/>
+
+        <Minors></Minors>
+        <hr/>
+
+        <Employment></Employment>
+        <hr/>
+
         {/* I can write a comment! */}
         <PeopleTabs />
-        <hr />
+        <hr/>
       </div>
     );
 

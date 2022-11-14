@@ -1,7 +1,7 @@
 import React from 'react'
 import { Tab } from 'semantic-ui-react'
 import getData from '../util/getData';
-import Degrees from './Degrees';
+import Degrees from './DegreesUndergraduate';
 
 /*
 const panes = [
@@ -32,18 +32,7 @@ export default class DegreesTabs extends React.Component {
                         <Degrees key="1" title="WMC" />
                     </Tab.Pane>
             },
-            {
-                menuItem: 'HCC', render: () =>
-                    <Tab.Pane>
-                        <Degrees key="2" title="HCC" />
-                    </Tab.Pane>
-            },
-            {
-                menuItem: 'CIT', render: () =>
-                    <Tab.Pane>
-                        <Degrees key="3" title="CIT" />
-                    </Tab.Pane>
-            }
+            
         ]
 
         if (!loaded) return (<div><h1>Our Degrees is Loading...</h1></div>);

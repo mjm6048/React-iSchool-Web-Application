@@ -1,6 +1,6 @@
 import React from 'react';
 import getData from '../util/getData.js';
-import MinorsCards from './MinorsCards';
+import MinorsModal from './MinorsModal.js';
 
 export default class Minors extends React.Component {
     constructor(props) {
@@ -22,13 +22,13 @@ export default class Minors extends React.Component {
                 <h1>{minors.title}</h1>
                 <h2>Minors</h2>
                 {/* Put out ALL of the minors... */}
-                <div className='minorsList'>
+                <div className='peopleList'>
                     {
-                        minors.minors.map((p) =>
-                            <div className='minorItem'>
+                        minors.UgMinors.map((p) =>
+                        <div className='peopleListItem'>
                                 {/* replace the below with a cute little icon for reach minor */}
                                 <img src={p.imagePath} style={{ maxWidth: "150px" }} alt="Cute Little Icon" />
-                                <MinorsCards {...p}> </MinorsCards>
+                                <MinorsModal {...p}> </MinorsModal>
                             </div>
                         )
                     }

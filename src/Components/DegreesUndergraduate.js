@@ -2,7 +2,7 @@ import React from 'react';
 import DegreesModal from './DegreesModal.js';
 import getData from '../util/getData.js';
 
-export default class Degrees extends React.Component {
+export default class DegreesUndergraduate extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -15,13 +15,13 @@ export default class Degrees extends React.Component {
         const { degrees, loaded } = this.state;
 
         //initial state
-        if (!loaded) return (<div>Degrees Loading...</div>);
+        if (!loaded) return (<div>Undergraduate Degrees Loading...</div>);
 
         return (
             <div>
                 {/* Need to edit 23 and 24 */}
-                <h1>{degrees.title}</h1>
-                <h3>{degrees.degreeName}</h3>
+                {/* <h1>{degrees.title}</h1>
+                <h3>{degrees.degreeName}</h3> */}
                 <h2>Our Undergraduate Degrees</h2>
                 {/* Put out ALL of the degrees... */}
                 <div className='peopleList'>
