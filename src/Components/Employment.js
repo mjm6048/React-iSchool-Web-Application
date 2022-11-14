@@ -1,6 +1,6 @@
 import React from 'react';
 import getData from '../util/getData.js';
-import StatisticCard from './EmploymentCard.js';
+import StatisticCard from './EmploymentStatisticCard.js';
 
 export default class Employment extends React.Component {
     constructor(props) {
