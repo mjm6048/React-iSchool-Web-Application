@@ -9,7 +9,7 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 400,
+    width: 800,
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
@@ -23,7 +23,7 @@ export default function MinorsModal({ name, title, description, courses, note}) 
 
     return (
         <div>
-            <Button onClick={handleOpen}>{name}</Button>
+            <h3>{title}</h3>
             <Modal
                 open={open}
                 onClose={handleClose}
@@ -48,6 +48,7 @@ export default function MinorsModal({ name, title, description, courses, note}) 
                     </Typography>
                 </Box>
             </Modal>
+            <Button onClick={handleOpen}>Click me for more info</Button>
         </div>
     );
 }
