@@ -25,7 +25,6 @@ export default class Employment extends React.Component {
                 <h2>{employment.introduction.content[0].description}</h2>
 
                 {/* All of statistics */}
-                <h2>{employment.degreeStatistics.title}</h2>
                 {EmploymentStatisticCard(employment.degreeStatistics.statistics[0].value, employment.degreeStatistics.statistics[0].description)}
 
                 {EmploymentStatisticCard(employment.degreeStatistics.statistics[1].value, employment.degreeStatistics.statistics[1].description)}

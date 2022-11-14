@@ -19,8 +19,8 @@ export default class Minors extends React.Component {
 
         return (
             <div>
-                <h1>{minors.title}</h1>
-                <h2>Minors</h2>
+                <h2>Our Undergraduate Minors</h2>
+                <h3>Expand your field of study</h3>
                 {/* Put out ALL of the minors... */}
                 <div className='peopleList'>
                     {

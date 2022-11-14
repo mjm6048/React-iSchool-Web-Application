@@ -29,7 +29,7 @@ export default class App extends React.Component {
 
     return (
       <div className="App">
-        <h1>Welcome to the iSchool website....!</h1>
+        <h1>Information Sciences and Technologies @ RIT</h1>
         <h2>{about.title}</h2>
         <h4>{about.description}</h4>
         <h3>{about.quote}</h3>
