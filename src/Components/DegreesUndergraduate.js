@@ -1,5 +1,5 @@
 import React from 'react';
-import DegreesModal from './DegreesModal.js';
+import DegreesUndergraduateModal from './DegreesUndergraduateModal.js';
 import getData from '../util/getData.js';
 
 export default class DegreesUndergraduate extends React.Component {
@@ -30,7 +30,7 @@ export default class DegreesUndergraduate extends React.Component {
                             <div className='peopleListItem'>
                                 {/* replace the below with a cute little icon for reach major */}
                                 <img src={p.imagePath} style={{ maxWidth: "150px" }} alt="Cute Little Icon" />
-                                <DegreesModal {...p}> </DegreesModal>
+                                <DegreesUndergraduateModal {...p}> </DegreesUndergraduateModal>
                             </div>
                         )
                     }

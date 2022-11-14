@@ -16,7 +16,7 @@ const style = {
     p: 4,
 };
 
-export default function DegreesModal({ degreeName, title, description, concentrations}) {
+export default function DegreesGraduateModal({ degreeName, title, description, concentrations}) {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
