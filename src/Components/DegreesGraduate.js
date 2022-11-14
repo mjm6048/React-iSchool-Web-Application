@@ -23,7 +23,7 @@ export default class DegreesGraduate extends React.Component {
                 {/* Put out ALL of the degrees... */}
                 <div className='peopleList'>
                     {
-                        degrees.graduate.map((p) =>
+                        degrees.graduate.slice(0,3).map((p) =>
                             <div className='peopleListItem'>
                                 <DegreesGraduateModal {...p}> </DegreesGraduateModal>
                             </div>

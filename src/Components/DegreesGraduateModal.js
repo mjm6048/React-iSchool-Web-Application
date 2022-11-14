@@ -23,6 +23,8 @@ export default function DegreesGraduateModal({ degreeName, title, description, c
 
     return (
         <div>
+            <h3>{title}</h3>
+            <p>{description}</p>
             <Button onClick={handleOpen}>{degreeName}</Button>
             <Modal
                 open={open}
