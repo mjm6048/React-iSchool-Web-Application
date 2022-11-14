@@ -19,17 +19,12 @@ export default class DegreesGraduate extends React.Component {
 
         return (
             <div>
-                {/* Need to edit 23 and 24 */}
-                {/* <h1>{degrees.title}</h1>
-                <h3>{degrees.degreeName}</h3> */}
                 <h2>Our Graduate Degrees</h2>
                 {/* Put out ALL of the degrees... */}
                 <div className='peopleList'>
                     {
                         degrees.graduate.map((p) =>
                             <div className='peopleListItem'>
-                                {/* replace the below with a cute little icon for reach major */}
-                                <img src={p.imagePath} style={{ maxWidth: "150px" }} alt="Cute Little Icon" />
                                 <DegreesGraduateModal {...p}> </DegreesGraduateModal>
                             </div>
                         )
