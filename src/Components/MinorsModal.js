@@ -5,6 +5,8 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import ControlPointIcon from '@mui/icons-material/ControlPoint';
 import Courses from './Courses';
+//import created to properly display escaped characters like &(&amp)
+import {decode} from 'html-entities';
 
 const style = {
     position: 'absolute',
@@ -22,12 +24,9 @@ export default function MinorsModal({ name, title, description, courses, note })
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
-    console.log(courses[0]);
 
     return (
         <div>
-
-
             <h3>{title}</h3>
             <Modal
                 open={open}
@@ -45,7 +44,7 @@ export default function MinorsModal({ name, title, description, courses, note })
                     {
                         courses.map((p) =>
                             <Typography id="modal-modal-title" variant="h5" component="ul">
-                                {p} <Courses courses></Courses>
+                                <Courses>{decode(p)}</Courses>
                             </Typography>
                         )
                     }

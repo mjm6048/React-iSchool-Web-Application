@@ -55,10 +55,6 @@ export default class App extends React.Component {
         <Careers></Careers>
         <hr/>
 
-        
-        {/* <Courses test="ISTE-340"></Courses> */}
-        <hr/>
-
         {/* I can write a comment! */}
         <PeopleTabs />
         <hr/>
