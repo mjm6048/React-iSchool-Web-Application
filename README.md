@@ -72,9 +72,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### List of everything installed for this project.
 
 MaterialUI (MUI) : https://mui.com/material-ui/getting-started/installation/
+    - Used for BasicModal. 
 
 MaterialUI Icons : https://mui.com/material-ui/material-icons/
+    - Used for adding pretty icons to different sections of the project.
 
 Semantic-UI : https://react.semantic-ui.com/usage
+    - Used for BasicTabs under People section.
 
-Used Tabs, Basic Modal, Cards, Default functionality
+HtmlEntities : https://www.npmjs.com/package/html-entities
+    - Used for decoding html entities contained within json and properly displaying them in each section.
