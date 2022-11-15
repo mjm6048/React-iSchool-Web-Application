@@ -17,14 +17,14 @@ export default class Courses extends React.Component {
         //initial state
         if (!loaded) return (<div>Courses Loading...</div>);
 
-        getData('employment/careers/careerNames/')
-        // getData('course/courseID=' + {courses.courseID} + '/')
-            .then((json) => {
-                this.setState({
-                    courses: json,
-                    loaded: true,
-                });
-            });
+        // getData('employment/careers/careerNames/')
+        // // getData('course/courseID=' + {courses.courseID} + '/')
+        //     .then((json) => {
+        //         this.setState({
+        //             courses: json,
+        //             loaded: true,
+        //         });
+        //     });
 
         return (
             
@@ -33,12 +33,18 @@ export default class Courses extends React.Component {
                 {/* Put out the course name... */}
                 <div className='peopleList'>
                     {
-                        courses.careerNames.map((p) =>
-                            <div className='peopleListItem'>
-                                <CoursesModal {...p}> </CoursesModal>
-                            </div>
-                        )
+                        // courses.courseID.map((p) =>
+                        //     <div className='peopleListItem'>
+                        //         <CoursesModal {...p}> </CoursesModal>
+                        //     </div>
+                        // )
+                        <CoursesModal></CoursesModal>
+                        // {courses.courseID}, {courses.title}, {courses.description}
                     }
+                    {/* <h2>{courses.courseID}</h2>
+                    <h2>{courses.title}</h2>
+                    <h2>{courses.description}</h2> */}
+                    
                 </div>
             </div>
         )
