@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 //import created to properly display escaped characters like &(&amp)
-import {decode} from 'html-entities';
+import { decode } from 'html-entities';
 
 const style = {
     position: 'absolute',
@@ -18,7 +18,7 @@ const style = {
     p: 4,
 };
 
-export default function CoursesModal({ courseID, title, description}) {
+export default function CoursesModal({ courseID, title, description }) {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);

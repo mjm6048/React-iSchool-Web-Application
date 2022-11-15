@@ -25,7 +25,7 @@ export default class Minors extends React.Component {
                 <div className='peopleList'>
                     {
                         minors.UgMinors.map((p) =>
-                        <div className='peopleListItem'>
+                            <div className='peopleListItem'>
                                 {/* replace the below with a cute little icon for reach minor */}
                                 <img src={p.imagePath} style={{ maxWidth: "150px" }} alt="Cute Little Icon" />
                                 <MinorsModal {...p}> </MinorsModal>

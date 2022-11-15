@@ -17,7 +17,7 @@ const style = {
     p: 4,
 };
 
-export default function DegreesUndergraduateModal({ title, description, concentrations}) {
+export default function DegreesUndergraduateModal({ title, description, concentrations }) {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -39,7 +39,7 @@ export default function DegreesUndergraduateModal({ title, description, concentr
                     <Typography id="modal-modal-title" variant="h5" component="h3">
                         Concentrations
                     </Typography>
-                    <hr/>
+                    <hr />
                     <Typography id="modal-modal-title" variant="h5" component="ul">
                         {concentrations[0]}
                     </Typography>
@@ -60,7 +60,7 @@ export default function DegreesUndergraduateModal({ title, description, concentr
                     </Typography>
                 </Box>
             </Modal>
-            
+
             <Button onClick={handleOpen}><ControlPointIcon> fontSize="large"</ControlPointIcon></Button>
             <p>Click to find out more.</p>
         </div>

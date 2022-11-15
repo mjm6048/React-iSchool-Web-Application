@@ -6,7 +6,7 @@ import Modal from '@mui/material/Modal';
 import ControlPointIcon from '@mui/icons-material/ControlPoint';
 import Courses from './Courses';
 //import created to properly display escaped characters like &(&amp)
-import {decode} from 'html-entities';
+import { decode } from 'html-entities';
 
 const style = {
     position: 'absolute',

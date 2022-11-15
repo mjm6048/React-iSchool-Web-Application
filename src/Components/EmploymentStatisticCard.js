@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 
 export default function EmploymentStatisticCard(value, description, color) {
     return (
-        <Card sx={{ minWidth: 275 }} style={{backgroundColor: "red"}}>
+        <Card sx={{ minWidth: 275 }} style={{ backgroundColor: "red" }}>
             <CardContent>
                 <Typography variant="h5" component="div">
                     {value}

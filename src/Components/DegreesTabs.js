@@ -32,7 +32,7 @@ export default class DegreesTabs extends React.Component {
                         <Degrees key="1" title="WMC" />
                     </Tab.Pane>
             },
-            
+
         ]
 
         if (!loaded) return (<div><h1>Our Degrees is Loading...</h1></div>);
