@@ -4,6 +4,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import ControlPointIcon from '@mui/icons-material/ControlPoint';
+import Courses from './Courses';
 
 const style = {
     position: 'absolute',
@@ -17,13 +18,16 @@ const style = {
     p: 4,
 };
 
-export default function MinorsModal({ name, title, description, courses, note}) {
+export default function MinorsModal({ name, title, description, courses, note }) {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+    console.log(courses[0]);
 
     return (
         <div>
+
+
             <h3>{title}</h3>
             <Modal
                 open={open}
@@ -38,30 +42,13 @@ export default function MinorsModal({ name, title, description, courses, note}) 
                     <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                         {description}
                     </Typography>
-                    <Typography id="modal-modal-title" variant="h5" component="ul">
-                        {courses[0]}
-                    </Typography>
-                    <Typography id="modal-modal-title" variant="h5" component="ul">
-                        {courses[1]}
-                    </Typography>
-                    <Typography id="modal-modal-title" variant="h5" component="ul">
-                        {courses[2]}
-                    </Typography>
-                    <Typography id="modal-modal-title" variant="h5" component="ul">
-                        {courses[3]}
-                    </Typography>
-                    <Typography id="modal-modal-title" variant="h5" component="ul">
-                        {courses[4]}
-                    </Typography>
-                    <Typography id="modal-modal-title" variant="h5" component="ul">
-                        {courses[5]}
-                    </Typography>
-                    <Typography id="modal-modal-title" variant="h5" component="ul">
-                        {courses[6]}
-                    </Typography>
-                    <Typography id="modal-modal-title" variant="h5" component="ul">
-                        {courses[7]}
-                    </Typography>
+                    {
+                        courses.map((p) =>
+                            <Typography id="modal-modal-title" variant="h5" component="ul">
+                                {p} <Courses courses></Courses>
+                            </Typography>
+                        )
+                    }
                     <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                         {note}
                     </Typography>
