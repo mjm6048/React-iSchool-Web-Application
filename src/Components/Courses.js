@@ -7,7 +7,7 @@ export default class Courses extends React.Component {
         super(props);
         this.state = {
             courses: {},
-            loaded: false
+            loaded: false,
         }
     }
 
@@ -17,17 +17,7 @@ export default class Courses extends React.Component {
         //initial state
         if (!loaded) return (<div>Courses Loading...</div>);
 
-        // getData('employment/careers/careerNames/')
-        // // getData('course/courseID=' + {courses.courseID} + '/')
-        //     .then((json) => {
-        //         this.setState({
-        //             courses: json,
-        //             loaded: true,
-        //         });
-        //     });
-
         return (
-            
             <div>
                 <h1>Courses</h1>
                 {/* Put out the course name... */}
@@ -41,8 +31,7 @@ export default class Courses extends React.Component {
     }
 
     componentDidMount() {
-        getData('course/courseID=ISTE-340')
-        // getData('course/courseID=' + {courses.courseID} + '/')
+        getData('course/courseID=' + this.props.test + '/')
             .then((json) => {
                 this.setState({
                     courses: json,
