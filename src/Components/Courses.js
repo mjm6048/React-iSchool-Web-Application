@@ -33,18 +33,8 @@ export default class Courses extends React.Component {
                 {/* Put out the course name... */}
                 <div className='peopleList'>
                     {
-                        // courses.courseID.map((p) =>
-                        //     <div className='peopleListItem'>
-                        //         <CoursesModal {...p}> </CoursesModal>
-                        //     </div>
-                        // )
-                        <CoursesModal></CoursesModal>
-                        // {courses.courseID}, {courses.title}, {courses.description}
+                        <CoursesModal {...courses}></CoursesModal>
                     }
-                    {/* <h2>{courses.courseID}</h2>
-                    <h2>{courses.title}</h2>
-                    <h2>{courses.description}</h2> */}
-                    
                 </div>
             </div>
         )
