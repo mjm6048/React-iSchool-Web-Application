@@ -1,5 +1,4 @@
 import React from 'react';
-import People from './Components/People.js';
 import PeopleTabs from './Components/PeopleTabs.js';
 import './App.css';
 import getData from './util/getData.js';
@@ -9,7 +8,6 @@ import DegreesGraduate from './Components/DegreesGraduate.js';
 import Employment from './Components/Employment.js';
 import Employers from './Components/Employers.js';
 import Careers from './Components/Careers.js';
-import Courses from './Components/Courses';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -60,7 +58,6 @@ export default class App extends React.Component {
         <hr/>
       </div>
     );
-
   }
 
   componentDidMount() {
@@ -75,8 +72,8 @@ export default class App extends React.Component {
       });
   }
 
-  //on mounting - 1) constructor, 2)getDerivedStateFromProps ,3)render, 4)componentDidMount
+  // on mounting - 1) constructor, 2)getDerivedStateFromProps ,3)render, 4)componentDidMount
 
 }
 
-//export default App;
+// export default App;
