@@ -76,4 +76,4 @@ export default class App extends React.Component {
 
 }
 
-// export default App;
+// commented out code export default App;

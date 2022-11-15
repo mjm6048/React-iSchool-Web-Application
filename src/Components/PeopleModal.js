@@ -45,7 +45,7 @@ export default function PeopleModal({ name, tagline, title, interestArea, office
                     {/* cool if true then show website link */}
                     {website &&
                         <Typography sx={{ mt: 2 }}>
-                            <a href={website} target="_blank">My Site</a>
+                            <a href={website} target="_blank" rel="noreferrer">My Site</a>
                         </Typography>
                     }
                     {office &&
