@@ -67,7 +67,7 @@ export default function MinorsModal({ name, title, description, courses, note}) 
                     </Typography>
                 </Box>
             </Modal>
-            <Button onClick={handleOpen}><ControlPointIcon> fontSize="large"</ControlPointIcon></Button>
+            <Button onClick={handleOpen}><ControlPointIcon color="secondary"> fontSize="large"</ControlPointIcon></Button>
             <p>Click to find out more.</p>
         </div>
     );

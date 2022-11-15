@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
@@ -30,13 +31,14 @@ export default function CoursesModal({ courseID, title, description}) {
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h3" component="h2">
-                    {courseID} : {title}
+                        {courseID} : {title}
                     </Typography>
                     <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                         {description}
                     </Typography>
                 </Box>
             </Modal>
+            <Button onClick={handleOpen}></Button>
         </div>
     );
 }

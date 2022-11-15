@@ -3,24 +3,24 @@ import { Card } from 'semantic-ui-react';
 import getData from '../util/getData';
 import Minors from './Minors';
 
-const items = [
-  {
-    header: 'Project Report - May',
-    description:
-      'Bring to the table win-win survival strategies to ensure proactive domination.',
-    meta: 'ROI: 34%',
-  },
-  {
-    header: UgMinors.name,
-    description:
-      'Capitalise on low hanging fruit to identify a ballpark value added activity to beta test.',
-    meta: 'ROI: 27%',
-  },
-]
+// const items = [
+//   {
+//     header: 'Project Report - May',
+//     description:
+//       'Bring to the table win-win survival strategies to ensure proactive domination.',
+//     meta: 'ROI: 34%',
+//   },
+//   {
+//     header: UgMinors.name,
+//     description:
+//       'Capitalise on low hanging fruit to identify a ballpark value added activity to beta test.',
+//     meta: 'ROI: 27%',
+//   },
+// ]
 
-const CardExampleGroupProps = () => <Card.Group items={items} />
+// const CardExampleGroupProps = () => <Card.Group items={items} />
 
-export default CardExampleGroupProps
+// export default CardExampleGroupProps
 
 
 // export default class MinorsCards extends React.Component {

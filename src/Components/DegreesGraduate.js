@@ -33,11 +33,11 @@ export default class DegreesGraduate extends React.Component {
                 <div>
                     <h2>Our Graduate Advanced Certificates</h2>
                 </div>
-                <div className='peopleList'>
-                    <div className='peopleListItem'>
+                <div className='certificateList'>
+                    <div className='certificateListItem'>
                         <h2>{degrees.graduate[3].availableCertificates[0]}</h2>
                     </div>
-                    <div className='peopleListItem'>
+                    <div className='certificateListItem'>
                         <h2>{degrees.graduate[3].availableCertificates[1]}</h2>
                     </div>
                 </div>
