@@ -61,8 +61,7 @@ export default function DegreesGraduateModal({ degreeName, title, description, c
                 </Box>
             </Modal>
 
-            <Button onClick={handleOpen}><ControlPointIcon> fontSize="large"</ControlPointIcon></Button>
-            {/* <img src={p.imagePath} style={{ maxWidth: "150px" }} alt="Cute Little Icon" /> */}
+            <Button onClick={handleOpen}><ControlPointIcon color="secondary" fontSize="large"></ControlPointIcon></Button>
             <p>Click to find out more.</p>
         </div>
     );
