@@ -20,9 +20,9 @@ export default class Employment extends React.Component {
         return (
             <div>
                 {/* All of employment introduction */}
-                <h1>{employment.introduction.title}</h1>
-                <h2>{employment.introduction.content[0].title}</h2>
-                <h2>{employment.introduction.content[0].description}</h2>
+                <h1>{employment.introduction.content[0].title}</h1>
+                <h2>{employment.introduction.title}</h2>
+                <h3>{employment.introduction.content[0].description}</h3>
 
                 {/* All of statistics */}
                 {EmploymentStatisticCard(employment.degreeStatistics.statistics[0].value, employment.degreeStatistics.statistics[0].description, "red")}
@@ -36,10 +36,6 @@ export default class Employment extends React.Component {
                 {/* All of cooperative education introduction */}
                 <h2>{employment.introduction.content[1].title}</h2>
                 <h2>{employment.introduction.content[1].description}</h2>
-
-                {/* All of employing company names */}
-
-                {/* All of careers/jobs */}
 
             </div>
         )

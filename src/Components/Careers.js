@@ -19,11 +19,11 @@ export default class Careers extends React.Component {
         return (
             <div>
                 <h1>Careers</h1>
-                {/* Put out ALL of the Employer Names... */}
-                <div className='peopleList'>
+                {/* Put out ALL of the career Names... */}
+                <div className='careerList'>
                     {
                         careers.careerNames.map((p) =>
-                            <div className='peopleListItem'>
+                            <div className='careerListItem'>
                                 <div>{p}</div>
                             </div>
                         )
