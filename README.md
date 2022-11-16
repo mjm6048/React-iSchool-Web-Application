@@ -77,6 +77,10 @@ MaterialUI (MUI) : https://mui.com/material-ui/getting-started/installation/
 MaterialUI Icons : https://mui.com/material-ui/material-icons/
     - Used for adding pretty icons to different sections of the project.
 
+MaterialUI X-data-grid: https://mui.com/x/react-data-grid/
+    - Used for data grid for both employment and cooperative education table.
+    - How to install can be found more clearly here: https://www.npmjs.com/package/@mui/x-data-grid
+
 Semantic-UI : https://react.semantic-ui.com/usage
     - Used for BasicTabs under People section.
 
