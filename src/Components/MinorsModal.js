@@ -41,6 +41,9 @@ export default function MinorsModal({ name, title, description, courses, note })
                     <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                         {description}
                     </Typography>
+                    <div className="courseBar">
+                        <h1>Courses</h1>
+                    </div>
                     {
                         courses.map((p) =>
                             <Typography id="modal-modal-title" variant="h5" component="ul">
@@ -53,7 +56,7 @@ export default function MinorsModal({ name, title, description, courses, note })
                     </Typography>
                 </Box>
             </Modal>
-            <Button onClick={handleOpen}><ControlPointIcon color="secondary"> fontSize="large"</ControlPointIcon></Button>
+            <Button onClick={handleOpen}><ControlPointIcon color="secondary" fontSize="large"> </ControlPointIcon></Button>
             <p>Click to find out more.</p>
         </div>
     );
