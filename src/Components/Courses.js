@@ -4,7 +4,6 @@ import CoursesModal from './CoursesModal.js';
 
 export default class Courses extends React.Component {
     constructor(props) {
-        console.log(props);
         super(props);
         this.state = {
             courses: {},
@@ -20,11 +19,10 @@ export default class Courses extends React.Component {
 
         return (
             <div>
-                {/* <h1>Courses</h1> */}
                 {/* Put out the course name... */}
                 <div className='peopleList'>
                     {
-                        <CoursesModal {...courses}></CoursesModal>
+                        <CoursesModal courseID={courses.courseID} title={courses.title} description={courses.description} ></CoursesModal>
                     }
                 </div>
             </div>

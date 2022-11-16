@@ -18,10 +18,13 @@ const style = {
     p: 4,
 };
 
-export default function CoursesModal({ courseID, title, description }) {
+export default function CoursesModal(props){
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+    const courseID = props.courseID;
+    const title = props.title;
+    const description = props.description;
 
     return (
         <div>
@@ -40,7 +43,7 @@ export default function CoursesModal({ courseID, title, description }) {
                     </Typography>
                 </Box>
             </Modal>
-            <Button onClick={handleOpen}>{decode(title)}</Button>
+            <Button onClick={handleOpen} sx={{textTransform: 'none'}}>{courseID}: {decode(title)}</Button>
         </div>
     );
 }
