@@ -47,7 +47,7 @@ export default function EmploymentCompleteTable(props) {
         }));
 
     return (
-        <Box sx={{ height: 600, alignItems: 'center', justifyContent: 'center', margin: '3em', marginLeft: '15em', marginRight: '15em' }}>
+        <Box sx={{ height: 600, alignItems: 'center', justifyContent: 'center', margin: '3em', marginLeft: '15em', marginRight: '15em', backgroundColor: 'whitesmoke' }}>
             <DataGrid
                 rows={rows}
                 columns={columns}
