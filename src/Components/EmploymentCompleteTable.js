@@ -39,20 +39,20 @@ const columns = [
 export default function EmploymentCompleteTable(props) {
     const rows = props.coopInformation.map((coop, key) => (
         {
-        id: key + 0,
-        employer: coop.employer,
-        degree: coop.degree,
-        city: coop.city,
-        term: coop.term,
-    }));
+            id: key + 0,
+            employer: coop.employer,
+            degree: coop.degree,
+            city: coop.city,
+            term: coop.term,
+        }));
 
     return (
-        <Box sx={{ height: 600,  alignItems: 'center', justifyContent: 'center', margin: '3em', marginLeft:'15em', marginRight: '15em'}}>
+        <Box sx={{ height: 600, alignItems: 'center', justifyContent: 'center', margin: '3em', marginLeft: '15em', marginRight: '15em' }}>
             <DataGrid
                 rows={rows}
                 columns={columns}
                 columnVisibilityModel={{
-                    id:false,
+                    id: false,
                 }}
                 pageSize={100}
                 rowsPerPageOptions={[5, 10, 15, 20, 50, 75, 100]}
