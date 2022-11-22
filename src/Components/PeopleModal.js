@@ -41,11 +41,21 @@ export default function PeopleModal({ name, tagline, title, interestArea, office
                     <Typography id="modal-modal-title" variant="h5" component="h2">
                         {tagline}
                     </Typography>
-                    <img src={imagePath} alt="me" />
+                    <img src={imagePath} alt="Faculty/Staff Person" />
+                    {email &&
+                        <Typography sx={{ mt: 2 }}>
+                            Email: {email}
+                        </Typography>
+                    }
                     {/* cool if true then show website link */}
                     {website &&
                         <Typography sx={{ mt: 2 }}>
-                            <a href={website} target="_blank" rel="noreferrer">My Site</a>
+                            Website: <a href={website} target="_blank" rel="noreferrer">Site</a>
+                        </Typography>
+                    }
+                    {interestArea &&
+                        <Typography sx={{ mt: 2 }}>
+                            Interest Areas: {interestArea}
                         </Typography>
                     }
                     {office &&
@@ -53,9 +63,11 @@ export default function PeopleModal({ name, tagline, title, interestArea, office
                             Office: {office}
                         </Typography>
                     }
-                    <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-                    </Typography>
+                    {phone &&
+                        <Typography sx={{ mt: 2 }}>
+                            Phone: {phone}
+                        </Typography>
+                    }
                 </Box>
             </Modal>
         </div>
