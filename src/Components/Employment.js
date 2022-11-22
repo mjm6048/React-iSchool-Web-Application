@@ -1,5 +1,6 @@
 import React from 'react';
 import getData from '../util/getData.js';
+import EmploymentCompleteTable from './EmploymentCompleteTable.js';
 import EmploymentStatisticCard from './EmploymentStatisticCard.js';
 
 export default class Employment extends React.Component {
@@ -36,6 +37,9 @@ export default class Employment extends React.Component {
                 {/* All of cooperative education introduction */}
                 <h2>{employment.introduction.content[1].title}</h2>
                 <h2>{employment.introduction.content[1].description}</h2>
+
+                {/* All of employed students */}
+                {EmploymentCompleteTable(employment.coopTable)}
 
             </div>
         )

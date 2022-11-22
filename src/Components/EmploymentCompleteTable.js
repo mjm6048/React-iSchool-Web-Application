@@ -8,11 +8,12 @@ const columns = [
         headerName: 'ID',
         width: 90,
         editable: false,
+        filterable: false,
     },
     {
         field: 'employer',
         headerName: 'Employer',
-        width: 150,
+        width: 400,
         editable: false,
     },
     {
@@ -28,23 +29,23 @@ const columns = [
         editable: false,
     },
     {
-        field: 'title',
-        headerName: 'Title',
+        field: 'term',
+        headerName: 'Term',
         width: 150,
         editable: false,
     },
 ];
 
-const rows = [
-    { id: 1, employer: 'TEST ME', degree: 'HCIN-MS', city: 'MACKLEMORE', title: 'WEB DEVELOPER WOOHOO' },
-    { id: 2, employer: 'TEST ME1', degree: 'HCIN-MS', city: 'MACKLEMORE', title: 'WEB DEVELOPER WOOHOO' },
-    { id: 3, employer: 'TEST ME2', degree: 'HCIN-MS', city: 'MACKLEMORE', title: 'WEB DEVELOPER WOOHOO' },
-    { id: 4, employer: 'TEST ME3', degree: 'Test-MS', city: 'MACKLEMORE', title: 'WEB DEVELOPER WOOHOO' },
-    { id: 5, employer: 'TEST ME4', degree: 'HCIN-MS', city: 'MACKLEMORE', title: 'WEB DEVELOPER WOOHOO' },
-    { id: 6, employer: 'TEST ME5', degree: 'HCIN-MS', city: 'MACKLEMORE', title: 'WEB DEVELOPER WOOHOO' },
-];
+export default function EmploymentCompleteTable(props) {
+    const rows = props.coopInformation.map((coop, key) => (
+        {
+        id: key + 0,
+        employer: coop.employer,
+        degree: coop.degree,
+        city: coop.city,
+        term: coop.term,
+    }));
 
-export default function EmploymentCompleteTable() {
     return (
         <Box sx={{ height: 600,  alignItems: 'center', justifyContent: 'center', margin: '3em', marginLeft:'15em', marginRight: '15em'}}>
             <DataGrid
@@ -53,8 +54,9 @@ export default function EmploymentCompleteTable() {
                 columnVisibilityModel={{
                     id:false,
                 }}
-                pageSize={9}
-                rowsPerPageOptions={[100]}
+                pageSize={100}
+                rowsPerPageOptions={[5, 10, 15, 20, 50, 75, 100]}
+                pagination
             />
         </Box>
     );
