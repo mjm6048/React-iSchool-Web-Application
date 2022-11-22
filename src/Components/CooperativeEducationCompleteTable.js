@@ -19,19 +19,19 @@ const columns = [
     {
         field: 'degree',
         headerName: 'Degree',
-        width: 150,
+        width: 200,
         editable: false,
     },
     {
         field: 'city',
         headerName: 'City',
-        width: 150,
+        width: 200,
         editable: false,
     },
     {
         field: 'term',
         headerName: 'Term',
-        width: 150,
+        width: 200,
         editable: false,
     },
 ];
