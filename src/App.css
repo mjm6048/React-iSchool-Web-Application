@@ -109,3 +109,18 @@
   padding: 0;
   font-family: Montserrat, sans-serif;
 }
+
+.employmentCardsList {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 1em;
+  justify-content: center;
+}
+
+.employmentCardsItem {
+  display: inline-block;
+  margin: 1%;
+  text-transform: uppercase;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}

@@ -27,10 +27,23 @@ export default class Employment extends React.Component {
                 <h3>{employment.introduction.content[0].description}</h3>
 
                 {/* All of statistics */}
-                {EmploymentStatisticCard(employment.degreeStatistics.statistics[0].value, employment.degreeStatistics.statistics[0].description, "red")}
-                {EmploymentStatisticCard(employment.degreeStatistics.statistics[1].value, employment.degreeStatistics.statistics[1].description)}
-                {EmploymentStatisticCard(employment.degreeStatistics.statistics[2].value, employment.degreeStatistics.statistics[2].description)}
-                {EmploymentStatisticCard(employment.degreeStatistics.statistics[3].value, employment.degreeStatistics.statistics[3].description)}
+                <div className='employmentCardsList'>
+                    <div className='employmentCardsItem'>
+                    {EmploymentStatisticCard(employment.degreeStatistics.statistics[0].value, employment.degreeStatistics.statistics[0].description, "#d64541", "white")}
+                    </div>
+
+                    <div className='employmentCardsItem'>
+                    {EmploymentStatisticCard(employment.degreeStatistics.statistics[1].value, employment.degreeStatistics.statistics[1].description, "#2c3e50", "white")}
+                    </div>
+
+                    <div className='employmentCardsItem'>
+                    {EmploymentStatisticCard(employment.degreeStatistics.statistics[2].value, employment.degreeStatistics.statistics[2].description, "#68c3a3", "white")}
+                    </div>
+
+                    <div className='employmentCardsItem'>
+                    {EmploymentStatisticCard(employment.degreeStatistics.statistics[3].value, employment.degreeStatistics.statistics[3].description, "#f4b350", "white")}
+                    </div>
+                </div>
 
                 {/* All of former students becoming employees*/}
                 {EmploymentCompleteTable(employment.employmentTable)}
