@@ -1,5 +1,6 @@
 import React from 'react';
 import getData from '../util/getData.js';
+import CooperativeEducationCompleteTable from './CooperativeEducationCompleteTable.js';
 import EmploymentCompleteTable from './EmploymentCompleteTable.js';
 import EmploymentStatisticCard from './EmploymentStatisticCard.js';
 
@@ -27,19 +28,19 @@ export default class Employment extends React.Component {
 
                 {/* All of statistics */}
                 {EmploymentStatisticCard(employment.degreeStatistics.statistics[0].value, employment.degreeStatistics.statistics[0].description, "red")}
-
                 {EmploymentStatisticCard(employment.degreeStatistics.statistics[1].value, employment.degreeStatistics.statistics[1].description)}
-
                 {EmploymentStatisticCard(employment.degreeStatistics.statistics[2].value, employment.degreeStatistics.statistics[2].description)}
-
                 {EmploymentStatisticCard(employment.degreeStatistics.statistics[3].value, employment.degreeStatistics.statistics[3].description)}
+
+                {/* All of employed students on co-op. Cooperative Education*/}
+                {EmploymentCompleteTable(employment.coopTable)}
 
                 {/* All of cooperative education introduction */}
                 <h2>{employment.introduction.content[1].title}</h2>
                 <h2>{employment.introduction.content[1].description}</h2>
 
-                {/* All of employed students */}
-                {EmploymentCompleteTable(employment.coopTable)}
+                {/* All of employed students on co-op. Cooperative Education*/}
+                {CooperativeEducationCompleteTable(employment.coopTable)}
 
             </div>
         )

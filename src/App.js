@@ -54,9 +54,6 @@ export default class App extends React.Component {
         <Careers></Careers>
         <hr/>
 
-        {/* <EmploymentCompleteTable></EmploymentCompleteTable> */}
-        <hr/>
-
         {/* I can write a comment! */}
         <PeopleTabs />
         <hr/>
