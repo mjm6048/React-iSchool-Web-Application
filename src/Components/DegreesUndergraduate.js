@@ -21,10 +21,10 @@ export default class DegreesUndergraduate extends React.Component {
             <div>
                 <h2>Our Undergraduate Degrees</h2>
                 {/* Put out ALL of the degrees... */}
-                <div className='peopleList'>
+                <div className='degreesList'>
                     {
                         degrees.undergraduate.map((p) =>
-                            <div className='peopleListItem'>
+                            <div className='degreesListItem'>
                                 <DegreesUndergraduateModal {...p}> </DegreesUndergraduateModal>
                             </div>
                         )

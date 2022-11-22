@@ -22,10 +22,10 @@ export default class Minors extends React.Component {
                 <h2>Our Undergraduate Minors</h2>
                 <h3>Expand your field of study</h3>
                 {/* Put out ALL of the minors... */}
-                <div className='peopleList'>
+                <div className='minorsList'>
                     {
                         minors.UgMinors.map((p) =>
-                            <div className='peopleListItem'>
+                            <div className='minorsListItem'>
                                 {/* replace the below with a cute little icon for reach minor */}
                                 <img src={p.imagePath} style={{ maxWidth: "150px" }} alt="Cute Little Icon" />
                                 <MinorsModal {...p}> </MinorsModal>
