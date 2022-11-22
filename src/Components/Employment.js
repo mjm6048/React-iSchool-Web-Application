@@ -32,8 +32,8 @@ export default class Employment extends React.Component {
                 {EmploymentStatisticCard(employment.degreeStatistics.statistics[2].value, employment.degreeStatistics.statistics[2].description)}
                 {EmploymentStatisticCard(employment.degreeStatistics.statistics[3].value, employment.degreeStatistics.statistics[3].description)}
 
-                {/* All of employed students on co-op. Cooperative Education*/}
-                {EmploymentCompleteTable(employment.coopTable)}
+                {/* All of former students becoming employees*/}
+                {EmploymentCompleteTable(employment.employmentTable)}
 
                 {/* All of cooperative education introduction */}
                 <h2>{employment.introduction.content[1].title}</h2>
@@ -41,7 +41,6 @@ export default class Employment extends React.Component {
 
                 {/* All of employed students on co-op. Cooperative Education*/}
                 {CooperativeEducationCompleteTable(employment.coopTable)}
-
             </div>
         )
     }

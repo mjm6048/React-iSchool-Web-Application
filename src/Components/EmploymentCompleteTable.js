@@ -19,31 +19,31 @@ const columns = [
     {
         field: 'degree',
         headerName: 'Degree',
-        width: 150,
+        width: 200,
         editable: false,
     },
     {
         field: 'city',
         headerName: 'City',
-        width: 150,
+        width: 200,
         editable: false,
     },
     {
-        field: 'term',
-        headerName: 'Term',
-        width: 150,
+        field: 'title',
+        headerName: 'Title',
+        width: 400,
         editable: false,
     },
 ];
 
 export default function EmploymentCompleteTable(props) {
-    const rows = props.coopInformation.map((coop, key) => (
+    const rows = props.professionalEmploymentInformation.map((employment, key) => (
         {
             id: key + 0,
-            employer: coop.employer,
-            degree: coop.degree,
-            city: coop.city,
-            term: coop.term,
+            employer: employment.employer,
+            degree: employment.degree,
+            city: employment.city,
+            title: employment.title,
         }));
 
     return (
