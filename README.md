@@ -82,7 +82,8 @@ MaterialUI X-data-grid: https://mui.com/x/react-data-grid/
     - How to install can be found more clearly here: https://www.npmjs.com/package/@mui/x-data-grid/
 
 Semantic-UI : https://react.semantic-ui.com/usage/
-    - Used for BasicTabs under People section.
+    - Used for BasicTabs under People section. https://react.semantic-ui.com/modules/tab/
+    - Used for Menu Inverted stackable tabs. https://semantic-ui.com/collections/menu.html#stackable/
 
 Semantic UI CSS : https://react.semantic-ui.com/usage/
     - Used for BasicTabs css under People section.

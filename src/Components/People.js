@@ -18,7 +18,7 @@ export default class People extends React.Component {
         if (!loaded) return (<div>People Loading...</div>);
 
         return (
-            <div>
+            <div className='peopleSection'>
                 <h1>{people.title}</h1>
                 <h3>{people.subTitle}</h3>
                 <h2>Faculty</h2>

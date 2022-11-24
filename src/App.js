@@ -8,7 +8,6 @@ import DegreesGraduate from './Components/DegreesGraduate.js';
 import Employment from './Components/Employment.js';
 import Employers from './Components/Employers.js';
 import Careers from './Components/Careers.js';
-import EmploymentCompleteTable from './Components/EmploymentCompleteTable.js';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -29,34 +28,48 @@ export default class App extends React.Component {
 
     return (
       <div className="App">
-        <h1>Information Sciences and Technologies @ RIT</h1>
-        <h2>{about.title}</h2>
-        <h4>{about.description}</h4>
-        <h3>{about.quote}</h3>
-        <h3>--{about.quoteAuthor}</h3>
+        <div id="top" class="navMenu">
+          <h1>Welcome to the iSchool Website!</h1>
+          <div class="ui inverted stackable tabular menu">
+            <a href="#top" class="active link item">About</a>
+            <a href="#degreesUndergraduate" class="link item">Degrees</a>
+            <a href="#minors" class="link item">Minors</a>
+            <a href="#employment" class="link item">Employment</a>
+            <a href="#people" class="link item">People</a>
+          </div>
+        </div>
+        <div id="about" class="About">
+          <h1>Information Sciences and Technologies @ RIT</h1>
+          <h2>{about.title}</h2>
+          <h4>{about.description}</h4>
+          <h3>{about.quote}</h3>
+          <h3>--{about.quoteAuthor}</h3>
+        </div>
+
         {/* now we can start loading our Components! */}
-        <hr/>
+        <hr id="degreesUndergraduate"/>
         <DegreesUndergraduate></DegreesUndergraduate>
-        <hr/>
-
+        
+        <hr id="degreesGraduate"/>
         <DegreesGraduate></DegreesGraduate>
-        <hr/>
-
+        
+        <hr id="minors"/>
         <Minors></Minors>
-        <hr/>
-
+        
+        <hr id="employment"/>
         <Employment></Employment>
-        <hr/>
-
+        
+        <hr id="employers"/>
         <Employers></Employers>
-        <hr/>
-
+        
+        <hr id="careers"/>
         <Careers></Careers>
-        <hr/>
 
-        {/* I can write a comment! */}
+        <hr id="people"/>
         <PeopleTabs />
-        <hr/>
+
+        <hr id="footer"/>
+        {/* footer goes here */}
       </div>
     );
   }

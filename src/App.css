@@ -1,8 +1,29 @@
 .App {
   text-align: center;
+  /* padding: 0 3vw; */
 }
 
-/* rules for People... */
+/* Navigation Menu at top*/
+.navMenu {
+  background-color: #1b1c1d;
+  color: white;
+}
+
+/* Rules for hrs */
+.rainbow {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right,#87be31 15%,#ff0c64 35%,#0072ef 65%,#ff8e18 95%);
+}
+
+/* Rules for People */
+.peopleAll {
+  margin: 1em;
+}
+
 .peopleList {
   display: flex;
   flex-wrap: wrap;
@@ -10,7 +31,7 @@
 }
 
 .peopleList > * {
-  flex: 200px;
+  flex: 220px;
 }
 
 .peopleListItem {
@@ -21,7 +42,7 @@
   border-radius: 15px;
 }
 
-/* rules for Degrees... */
+/* Rules for Degrees */
 .degreesList, .minorsList {
   display: flex;
   flex-wrap: wrap;
@@ -40,6 +61,7 @@
   border-radius: 15px;
 }
 
+/* Rules for Graduate Certificates */
 .certificateList {
   display: flex;
   flex-wrap: wrap;
@@ -60,6 +82,7 @@
   background-color: red;
 }
 
+/* Rules for Careers */
 .careerList {
   display: flex;
   flex-wrap: wrap;
@@ -77,6 +100,7 @@
   font-family: Montserrat, sans-serif;
 }
 
+/* Rules for Employers */
 .employersList {
   display: flex;
   flex-wrap: wrap;
