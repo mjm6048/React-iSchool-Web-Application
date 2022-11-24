@@ -79,10 +79,17 @@ MaterialUI Icons : https://mui.com/material-ui/material-icons/
 
 MaterialUI X-data-grid: https://mui.com/x/react-data-grid/
     - Used for data grid for both employment and cooperative education table.
-    - How to install can be found more clearly here: https://www.npmjs.com/package/@mui/x-data-grid
+    - How to install can be found more clearly here: https://www.npmjs.com/package/@mui/x-data-grid/
 
-Semantic-UI : https://react.semantic-ui.com/usage
+Semantic-UI : https://react.semantic-ui.com/usage/
     - Used for BasicTabs under People section.
 
-HtmlEntities : https://www.npmjs.com/package/html-entities
+Semantic UI CSS : https://react.semantic-ui.com/usage/
+    - Used for BasicTabs css under People section.
+
+HtmlEntities : https://www.npmjs.com/package/html-entities/
     - Used for decoding html entities contained within json and properly displaying them in each section.
+
+### Helpful Links and Tools Used:
+
+Adobe Color Wheel : https://color.adobe.com/create/color-wheel/
