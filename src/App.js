@@ -8,6 +8,7 @@ import DegreesGraduate from './Components/DegreesGraduate.js';
 import Employment from './Components/Employment.js';
 import Employers from './Components/Employers.js';
 import Careers from './Components/Careers.js';
+import Hero from './assets/images/computerscreenwithdrink.jpg';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -38,6 +39,11 @@ export default class App extends React.Component {
             <a href="#people" class="link item">People</a>
           </div>
         </div>
+
+        <div class="heroImage">
+          <h1>Information Sciences and Technologies @ RIT</h1>
+        </div>
+
         <div id="about" class="About">
           <h1>Information Sciences and Technologies @ RIT</h1>
           <h2>{about.title}</h2>
