@@ -25,7 +25,7 @@ export default class App extends React.Component {
     //bring in state...
     const { about, loaded } = this.state;
 
-    if (!loaded) return (<div><h1>Loading...</h1></div>);
+    if (!loaded) return (<div><h1>Loading... My project is currently consuming data hosted on a private API that is linked to my school's private server and not open to the public for security reasons. I will happily show you everything in functioning format during an interview or with any possible follow-up questions.</h1></div>);
 
     return (
       <div className="App">
@@ -91,9 +91,6 @@ export default class App extends React.Component {
         })
       });
   }
-
   // on mounting - 1) constructor, 2)getDerivedStateFromProps ,3)render, 4)componentDidMount
-
 }
-
 // commented out code export default App;
